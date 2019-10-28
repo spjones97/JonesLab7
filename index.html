@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JonesLab7</title>
+
+    <!-- CDN link to SlickNav CSS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- CDN link to jQuery (necessary for SlickNav jQuery to work -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- CDN link to SlickNav jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".ul").slicknav({
+                prependTo: "#mobilemenu"
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <!--start navigation area -->
+    <nav id="mobilemenu"></nav>
+
+    <div class="header">header</div>
+    <aside class="left">
+        <ul class="container">
+            <li class="home"><a class="navlink" href="#">HOME</a></li>
+            <li class="thingone"><a class="navlink" href="#">THING</a></li>
+            <li class="thingtwo"><a class="navlink" href="#">THING</a></li>
+            <li class="thingthree"><a class="navlink" href="#">THING</a></li>
+        </ul>
+    </aside>
+    <main>main</main>
+    <aside class="right">aside</aside>
+    <footer>footer</footer>
+
+</body>
+
+</html>
